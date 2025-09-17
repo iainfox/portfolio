@@ -1,3 +1,16 @@
 body {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
     background-color: #131313;
+
+    display: grid;
+    grid-template-columns: repeat(20, 1fr);
+    grid-template-rows: repeat(20, 1fr);
+}
+
+.main-container {
+    background-color: #1f1f1f;
+    grid-column: 5 / 17;
+    grid-row: 3 / 19;
 }
