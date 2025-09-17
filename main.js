@@ -7,15 +7,15 @@ function addStar() {
     star.style.zIndex = `-1`
     star.style.backgroundColor = `#efefef`
 
-    const xPos = Math.random() * window.innerWidth;
-    star.style.left = `${xPos}px`;
-    const yPos = Math.random() * window.innerHeight;
-    star.style.top = `${yPos}px`;
+    const xScale = Math.random()
+    star.style.left = `${xScale * 100}vw`
+    const yScale = Math.random()
+    star.style.top = `${yScale * 100}vh`
 
     document.body.appendChild(star)
 }
 
-const totalStarCount = 100
+const totalStarCount = 1000
 for (let i = 0; i < totalStarCount; i++) {
-    addStar();
+    addStar()
 }
