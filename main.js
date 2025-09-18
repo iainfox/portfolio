@@ -4,7 +4,7 @@ function addStar() {
     star.style.height = `1px`
     star.style.position = `fixed`
 
-    star.style.zIndex = `-1`
+    star.style.zIndex = `-100`
     star.style.backgroundColor = `#efefef`
 
     const xScale = Math.random()
