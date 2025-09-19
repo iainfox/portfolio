@@ -15,8 +15,12 @@ body {
     grid-row: 3 / 19;
 
     border-radius: 15px;
-    
+    padding: 20px;
+
     position: relative;
+    display: grid;
+    grid-template-columns: repeat(20, 1fr);
+    grid-template-rows: repeat(20, 1fr);
 }
 
 .main-container::before {
@@ -27,4 +31,32 @@ body {
     margin: -1px;
     border-radius: inherit;
     background: radial-gradient(ellipse at center, #ffffff 0%, #ffffff00 100%);
+}
+
+.profile-container {
+    grid-column: 1/21;
+    grid-row: 1/3;
+
+    border-radius: 10px;
+    background-color: #2f2f2f;
+    position: relative;
+    z-index: 1;
+}
+
+.profile-container::before {
+    content: '';
+    position: absolute;
+    inset: -1px;
+    border-radius: inherit;
+    z-index: -2;
+    background: radial-gradient(ellipse at center, #ffffff 0%, #ffffff00 100%);
+}
+
+.profile-container::after {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    border-radius: inherit;
+    z-index: -1;
+    background: #2f2f2f;
 }
