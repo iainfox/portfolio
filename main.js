@@ -1,3 +1,5 @@
+const starContainer = document.getElementById("stars");
+
 function addStar() {
     const star = document.createElement("div")
     star.style.width = `1px`
@@ -12,7 +14,7 @@ function addStar() {
     const yScale = Math.random()
     star.style.top = `${yScale * 100}vh`
 
-    document.body.appendChild(star)
+    starContainer.appendChild(star)
 }
 
 const totalStarCount = 1000
