@@ -7,6 +7,8 @@ body {
     display: grid;
     grid-template-columns: repeat(20, 1fr);
     grid-template-rows: repeat(20, 1fr);
+
+    font-family: "Atkinson Hyperlegible", sans-serif;
 }
 
 .main-container {
@@ -34,6 +36,10 @@ body {
 }
 
 .profile-container {
+    display: grid;
+    grid-template-columns: repeat(30, 1fr);
+    grid-template-rows: repeat(10, 1fr);
+
     grid-column: 1/21;
     grid-row: 1/3;
 
@@ -59,4 +65,16 @@ body {
     border-radius: inherit;
     z-index: -1;
     background: #2f2f2f;
+}
+
+.details-container {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(10, 1fr);
+
+    grid-row: 2/10;
+    grid-column: 2/15;
+    background-color: aqua;
+
+    padding: 5px;
 }
