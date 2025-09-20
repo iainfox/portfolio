@@ -82,3 +82,15 @@ body {
     height: 95%;
     object-fit: cover;
 }
+
+.stacked {
+    display: flex;
+    flex-direction: column;
+
+    padding: 5px;
+}
+
+.name {
+    font-size: 25px;
+    margin: 0;
+}
