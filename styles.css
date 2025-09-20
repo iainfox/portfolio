@@ -68,13 +68,16 @@ body {
 }
 
 .details-container {
-    display: grid;
-    grid-template-columns: repeat(10, 1fr);
-    grid-template-rows: repeat(10, 1fr);
+    display: flex;
+    align-items: center;
 
     grid-row: 2/10;
     grid-column: 2/15;
-    background-color: aqua;
 
-    padding: 5px;
+    background-color: aqua;
+}
+
+.details-container img {
+    height: 95%;
+    object-fit: cover;
 }
