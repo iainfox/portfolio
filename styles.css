@@ -69,7 +69,6 @@ body {
 
 .details-container {
     display: flex;
-    align-items: center;
 
     grid-row: 2/10;
     grid-column: 2/15;
@@ -78,6 +77,8 @@ body {
 }
 
 .details-container img {
+    align-self: center;
+
     height: 95%;
     object-fit: cover;
 }
