@@ -68,23 +68,15 @@ body {
     display: flex;
 }
 
-.details-container img {
-    align-self: center;
-
+.pfp {
     height: 5em;
     object-fit: cover;
-}
-
-.stacked {
-    display: flex;
-    flex-direction: column;
-
-    padding: 5px;
 }
 
 .name {
     font-size: 25px;
     margin: 0;
+    padding-top: 0.5em;
 }
 
 .info {
@@ -95,5 +87,10 @@ body {
     color: #c7c7c7;
 
     margin: 0;
+    display: inline-block;
+}
+
+.icon {
+    height: 1em;
     display: inline-block;
 }
