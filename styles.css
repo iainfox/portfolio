@@ -9,6 +9,7 @@ body {
     grid-template-rows: repeat(20, 1fr);
 
     font-family: "Atkinson Hyperlegible", sans-serif;
+    color: #EEEEEE;
 }
 
 .main-container {
