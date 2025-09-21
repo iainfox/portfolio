@@ -4,9 +4,7 @@ body {
     overflow: hidden;
     background-color: #EEEEEE;
 
-    display: grid;
-    grid-template-columns: repeat(20, 1fr);
-    grid-template-rows: repeat(20, 1fr);
+    display: flex;
 
     font-family: "Atkinson Hyperlegible", sans-serif;
     color: #1f1f1f;
