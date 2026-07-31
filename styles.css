@@ -11,6 +11,7 @@
     --amber: #E7B65C;
 
     --mono: 'JetBrains Mono', ui-monospace, monospace;
+    --sans: 'IBM Plex Sans', system-ui, sans-serif;
 }
 
 * {
@@ -22,6 +23,10 @@ body {
     height: 100vh;
     margin: 0px;
 
+    font-family: var(--sans);
+    line-height: 1.55;
+
+    color:var(--text);
     background-color: var(--bg);
 }
 
