@@ -30,6 +30,11 @@ body {
     background-color: var(--bg);
 }
 
+::selection {
+    background:var(--amber);
+    color:#1B1E27;
+}
+
 .topbar {
     display: flex;
     align-items: stretch;
