@@ -189,6 +189,13 @@ section:last-of-type {
     gap: 6px;
 }
 
+.bio {
+    margin-top: 18px;
+    max-width: 56ch;
+    color: var(--ink);
+    font-size: 15.5px;
+}
+
 .project-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
