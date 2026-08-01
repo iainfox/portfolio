@@ -28,6 +28,14 @@ body {
     background-color: var(--bg);
 }
 
+h1,
+h2,
+h3 {
+    font-family: var(--mono);
+    margin: 0; 
+    color: var(--text);
+}
+
 ::selection {
     background:var(--amber);
     color:#1B1E27;
