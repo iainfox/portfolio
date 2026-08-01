@@ -178,7 +178,7 @@ section:last-of-type {
     color: var(--muted);
 }
 
-.project-grid .card .card-stac {
+.project-grid .card .card-stack {
     display: flex;
 }
 
