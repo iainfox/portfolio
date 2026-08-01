@@ -194,4 +194,12 @@ section:last-of-type {
 
 .project-grid .card .card-links {
     display: flex;
+    gap: 14px;
+}
+
+.project-grid .card .card-links a {
+    font-family: var(--mono);
+    font-size: 12px;
+    text-decoration: none;
+    color: var(--teal);
 }
