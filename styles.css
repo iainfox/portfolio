@@ -174,7 +174,8 @@ section:last-of-type {
 }
 
 .project-grid .card .card-desc {
-    
+    font-size: 14px;
+    color: var(--muted);
 }
 
 .project-grid .card .card-stac {
