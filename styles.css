@@ -115,6 +115,10 @@ section:last-of-type {
     border-bottom:none;
 }
 
+.section-head {
+    margin-bottom: 24px;
+}
+
 .project-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
