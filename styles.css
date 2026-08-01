@@ -9,6 +9,7 @@
     --muted: #8B93A7;
 
     --amber: #E7B65C;
+    --coral:  #E17A6D;
 
     --mono: 'JetBrains Mono', ui-monospace, monospace;
     --sans: 'IBM Plex Sans', system-ui, sans-serif;
@@ -84,4 +85,26 @@ h3 {
 .tab:hover {
     color: var(--ink);
     background: var(--surface-2);
+}
+
+.kicker {
+    font-family: var(--mono);
+    font-size: 13px;
+    color: var(--coral);
+    letter-spacing: .04em;
+    margin: 0 0 10px;
+}
+
+.kicker::before{
+    content: "// ";
+    color: var(--muted);
+}
+
+section {
+    padding: 72px 0;
+    border-bottom: 1px solid var(--border);
+}
+
+section:last-of-type {
+    border-bottom:none;
 }
