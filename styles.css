@@ -29,6 +29,11 @@ body {
     background-color: var(--bg);
 }
 
+.center {
+    max-width: 980px;
+    margin: 0 auto;
+}
+
 h1,
 h2,
 h3 {
