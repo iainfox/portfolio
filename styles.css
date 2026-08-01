@@ -213,3 +213,31 @@ section:last-of-type {
     text-decoration: none;
     color: var(--teal);
 }
+
+.now-list {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.now-list .now-item {
+    gap: 14px;
+    
+    background-color: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+
+    padding: 16px 18px;
+}
+
+.now-list .now-item .now-title {
+    font-family: var(--mono);
+    font-weight: 600;
+    font-size: 15px;
+}
+
+.now-list .now-item .now-desc {
+    color: var(--muted);
+    font-size: 13px;
+    margin: 4px 0 0 0;
+}
