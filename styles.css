@@ -213,6 +213,43 @@ section:last-of-type {
     color: var(--ink);
 }
 
+.cta-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 26px;
+}
+
+.btn {
+    font-family: var(--mono);
+    font-size: 13.5px;
+    text-decoration: none;
+    padding: 10px 16px;
+    border-radius: var(--radius);
+    border: 1px solid var(--border);
+    color: var(--ink);
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    transition: transform .12s ease, border-color .12s ease, background .12s ease;
+}
+
+.btn:hover {
+    transform: translateY(-1px);
+    border-color: var(--teal);
+}
+
+.btn.primary {
+    background: var(--amber);
+    color: #1B1E27;
+    border-color: var(--amber);
+    font-weight: 600;
+}
+
+.btn.primary:hover {
+    background: #f0c576;
+}
+
 .project-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
