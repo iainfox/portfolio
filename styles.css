@@ -143,6 +143,34 @@ section:last-of-type {
 
 .project-grid .card .card-head {
     display: flex;
+    justify-content: space-between;
+}
+
+.project-grid .card .card-head .card-title {
+    font-family: var(--mono);
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.project-grid .card .card-head .status {
+    font-family: var(--mono);
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: .05em;
+    padding: 3px 8px;
+    border-radius: 20px;
+}
+
+.project-grid .card .card-head .status.shipped {
+    background: rgba(110, 198, 184, .15);
+    color: var(--teal);
+    border: 1px solid rgba(110, 198, 184, .35)
+}
+
+.project-grid .card .card-head .status.progress {
+    background: rgba(231, 182, 92, .15);
+    color: var(--amber);
+    border: 1px solid rgba(231, 182, 92, .35)
 }
 
 .project-grid .card .card-desc {
