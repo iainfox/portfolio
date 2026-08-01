@@ -221,6 +221,7 @@ section:last-of-type {
 }
 
 .now-list .now-item {
+    display: flex;
     gap: 14px;
     
     background-color: var(--surface);
@@ -228,6 +229,42 @@ section:last-of-type {
     border-radius: 10px;
 
     padding: 16px 18px;
+}
+
+.pulse-dot {
+    position: relative;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: var(--amber);
+    margin-top: 6px;
+    flex-shrink: 0;
+}
+
+.pulse-dot::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 50%;
+    background-color: rgba(231,182,92,.5);
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(0);
+        opacity: .6;
+    }
+
+    70% {
+        transform: scale(3);
+        opacity: 0;
+    }
+
+    100% {
+        transform: scale(3);
+        opacity: 0;
+    }
 }
 
 .now-list .now-item .now-title {
