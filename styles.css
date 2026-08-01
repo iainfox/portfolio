@@ -10,6 +10,7 @@
 
     --amber: #E7B65C;
     --coral:  #E17A6D;
+    --teal: #6EC6B8;
 
     --mono: 'JetBrains Mono', ui-monospace, monospace;
     --sans: 'IBM Plex Sans', system-ui, sans-serif;
@@ -112,4 +113,46 @@ section {
 
 section:last-of-type {
     border-bottom:none;
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 18px;
+}
+
+.project-grid .card {
+    background-color: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+
+    padding: 20px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    transition: border-color .3s ease, transform .3s ease;
+}
+
+.project-grid .card:hover {
+    border-color: var(--teal);
+    transform: translateY(-2px);
+}
+
+.project-grid .card .card-head {
+    display: flex;
+}
+
+.project-grid .card .card-desc {
+    
+}
+
+.project-grid .card .card-stac {
+    display: flex;
+}
+
+.project-grid .card .card-links {
+    display: flex;
 }
