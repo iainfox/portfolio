@@ -9,7 +9,7 @@
     --muted: #8B93A7;
 
     --amber: #E7B65C;
-    --coral:  #E17A6D;
+    --coral: #E17A6D;
     --teal: #6EC6B8;
 
     --mono: 'JetBrains Mono', ui-monospace, monospace;
@@ -26,7 +26,7 @@ body {
     font-family: var(--sans);
     line-height: 1.55;
 
-    color:var(--text);
+    color: var(--text);
     background-color: var(--bg);
 }
 
@@ -39,13 +39,13 @@ h1,
 h2,
 h3 {
     font-family: var(--mono);
-    margin: 0; 
+    margin: 0;
     color: var(--text);
 }
 
 ::selection {
-    background:var(--amber);
-    color:#1B1E27;
+    background: var(--amber);
+    color: #1B1E27;
 }
 
 .topbar {
@@ -55,12 +55,12 @@ h3 {
 
     background-color: var(--surface);
     border-bottom: 1px solid var(--border);
-    
+
     height: 52px;
 }
 
 .topbar .main {
-    display :flex;
+    display: flex;
     align-items: center;
 
     padding: 0 16px;
@@ -72,7 +72,7 @@ h3 {
     border-right: 1px solid var(--border);
 }
 
-.tab{
+.tab {
     display: flex;
     align-items: center;
 
@@ -84,7 +84,7 @@ h3 {
 
     gap: 6px;
     padding: 0 16px;
-    
+
     transition: color .15s ease, border-color .15s ease, background .15s ease;
 }
 
@@ -101,7 +101,7 @@ h3 {
     margin: 0 0 10px;
 }
 
-.kicker::before{
+.kicker::before {
     content: "// ";
     color: var(--muted);
 }
@@ -112,7 +112,7 @@ section {
 }
 
 section:last-of-type {
-    border-bottom:none;
+    border-bottom: none;
 }
 
 .section-head {
@@ -354,7 +354,7 @@ section:last-of-type {
 .now-list .now-item {
     display: flex;
     gap: 14px;
-    
+
     background-color: var(--surface);
     border: 1px solid var(--border);
     border-radius: 10px;
@@ -377,7 +377,7 @@ section:last-of-type {
     position: absolute;
     inset: 0;
     border-radius: 50%;
-    background-color: rgba(231,182,92,.5);
+    background-color: rgba(231, 182, 92, .5);
     animation: pulse 2s infinite;
 }
 
@@ -418,7 +418,7 @@ section:last-of-type {
 .contact-list .contact-card {
     flex: 1 1 200px;
     padding: 18px;
-    
+
     background-color: var(--surface);
     border: 1px solid var(--border);
     border-radius: 10px;
