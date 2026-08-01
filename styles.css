@@ -180,6 +180,16 @@ section:last-of-type {
 
 .project-grid .card .card-stack {
     display: flex;
+    gap: 6px;
+}
+
+.project-grid .card .card-stack .chip {
+    font-family: var(--mono);
+    font-size: 11px;
+
+    background-color: var(--surface-2);
+    padding: 3px 8px;
+    border-radius: 5px;
 }
 
 .project-grid .card .card-links {
