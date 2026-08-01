@@ -182,6 +182,12 @@ section:last-of-type {
     color: var(--muted);
 }
 
+.project-grid .card .card-desc a {
+    color: var(--teal);
+    font-family: var(--mono);
+    text-decoration: none;
+}
+
 .project-grid .card .card-stack {
     display: flex;
     gap: 6px;
