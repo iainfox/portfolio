@@ -278,3 +278,39 @@ section:last-of-type {
     font-size: 13px;
     margin: 4px 0 0 0;
 }
+
+.contact-list {
+    display: flex;
+    gap: 14px;
+}
+
+.contact-list .contact-card {
+    flex: 1 1 200px;
+    padding: 18px;
+    
+    background-color: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+
+    color: var(--text);
+    text-decoration: none;
+
+    transition: border-color .3s ease, transform .3s ease;
+}
+
+.contact-list .contact-card:hover {
+    border-color: var(--amber);
+    transform: translateY(-2px);
+}
+
+.contact-list .contact-card .label {
+    font-family: var(--mono);
+    font-size: 12px;
+    color: var(--muted);
+}
+
+.contact-list .contact-card .value {
+    font-family: var(--mono);
+    font-size: 15px;
+    margin-top: 6px;
+}
