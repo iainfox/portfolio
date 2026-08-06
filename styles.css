@@ -70,11 +70,16 @@ body {
 }
 
 @keyframes grid-scroll {
-    from {
+    0% {
         background-position: 0 0;
     }
-    to {
-        background-position: 48px 48px;
+
+    50% {
+        background-position: 24px -24px;
+    }
+
+    100% {
+        background-position: 48px 0;
     }
 }
 
