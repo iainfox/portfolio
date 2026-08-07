@@ -67,6 +67,7 @@ body {
         linear-gradient(-45deg, transparent calc(50% - 1px), var(--surface) 50%, transparent calc(50% + 1px));
     background-size: 48px 48px;
     animation: grid-scroll 2s linear infinite;
+    transition: all .2s ease;
 }
 
 @keyframes grid-scroll {
@@ -81,6 +82,10 @@ body {
     100% {
         background-position: 48px 0;
     }
+}
+
+.bg.dimmed {
+    filter: brightness(.85);
 }
 
 h1,
@@ -317,6 +322,8 @@ section:last-of-type {
     gap: 10px;
 
     transition: border-color .3s ease, transform .3s ease;
+
+    cursor: pointer;
 }
 
 .project-grid .card:hover {
